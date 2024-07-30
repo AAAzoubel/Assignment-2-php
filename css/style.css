@@ -1,0 +1,211 @@
+.form-action {
+    display: flex; /* flexbox layout */
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; /* rounds the corners of the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow around the form */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* light background color */
+    display: flex; /* flexbox layout */
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header nav {
+    background-color: #007BFF; /* Sets the background color to blue */
+    padding: 10px; /* Adds padding inside the nav */
+    border-radius: 5px; /* Rounds the corners of the nav */
+    margin-bottom: 20px; /* Add space below the nav */
+}
+
+header nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Centers the list items */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Adds horizontal spacing between list items */
+}
+
+header nav ul li a {
+    color: white; /* Sets text color to white */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 20px; /* Adds padding inside the links */
+    display: block; /* Makes links block-level elements */
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px; /* Rounds the corners on hover */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff; /* Sets the background color to white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex: 1; /* Allow the container to grow and fill available space */
+}
+
+h1 {
+    text-align: center; /* text in the center */
+    color: #333;
+    margin-bottom: 20px; /* space below the heading */
+    font-size: 24px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 10px;
+    margin-bottom: 15px; /* space below the inputs */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* border to the inputs */
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+input[type="submit"] {
+    background-color: #007BFF; /* Sets the background color */
+    color: white; /* Sets the text color to white */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer */
+    transition: background-color 0.3s; /* Adds a transition effect for the background color */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center; /* Centers the footer text */
+    padding: 10px; /* Adds padding inside the footer */
+    background-color: #007BFF; /* background color */
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px; /* space above the footer */
+    width: 100%;
+}
+
+table {
+    width: 100%; /* table width to 100% of the container */
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin-bottom: 20px; /* Add space below the table */
+}
+
+table th, table td {
+    padding: 10px; /* more padding inside table cells */
+    border: 1px solid #ddd; /* Add a light grey border around cells */
+    text-align: left;
+}
+
+table th {
+    background-color: #007BFF; /* Set background color of table headers to blue */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* background color of even table rows to light grey */
+}
+
+.upload-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.upload-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.upload-button {
+    background-color: #007BFF; /* mesma cor de fundo dos outros botões */
+    color: white; /* cor do texto em branco */
+    border: none; /* remove a borda padrão */
+    padding: 10px 20px; /* adiciona preenchimento */
+    border-radius: 5px; /* arredonda os cantos */
+    cursor: pointer; /* altera o cursor para pointer */
+    transition: background-color 0.3s; /* adiciona um efeito de transição para a cor de fundo */
+    width: 100%; /* faz com que o botão ocupe toda a largura disponível */
+    box-sizing: border-box; /* garante que o padding e a borda sejam incluídos na largura total do botão */
+}
+
+.upload-button:hover {
+    background-color: #0056b3; /* cor de fundo mais escura ao passar o mouse */
+}
+
+.gallery-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #0056b3;
+}
